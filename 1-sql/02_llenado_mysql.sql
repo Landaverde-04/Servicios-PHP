@@ -151,5 +151,23 @@ INSERT INTO ACCESO_USUARIO (IDUSUARIO, IDOPCION) VALUES
 ('02','070'),('02','071'),('02','074'),('02','080'),('02','081'),('02','084'),('02','090'),('02','091'),('02','094'),
 ('02','100'),('02','101'),('02','104'),('02','110'),('02','111'),('02','114'),('02','120'),('02','121'),('02','124'),
 ('02','130'),('02','131'),('02','134'),('02','140'),('02','141'),('02','144'),('02','150'),('02','151'),('02','154');
+-- ============================================================================
+-- Paquete extra agregado para pruebas y defensa (PQ06)
+-- ============================================================================
+INSERT INTO PAQUETE_TURISTICO (IDPAQUETE, IDAGENCIA, NOMBREPAQUETE, DESPAQUETE, FECHAINICIO, FECHAFIN, CUPOMAXIMO, ESTADO) 
+VALUES ('PQ06', 'AG01', 'Aventura en Cancún y NY', 'Un tour emocionante combinando playas del Caribe y rascacielos.', '2026-11-01', '2026-11-12', 20, 'Activo');
+
+INSERT INTO PAQUETE_DESTINO (IDPAQUETE, IDDESTINO) VALUES 
+('PQ06', 'D03'),
+('PQ06', 'D05');
+
+INSERT INTO PAQUETE_MOTIVACION (IDMOTIVACION, IDPAQUETE) VALUES 
+('M01', 'PQ06'),
+('M05', 'PQ06');
+
+INSERT INTO PRECIO_PAQUETE_CLASE (IDPAQUETE, IDCLASE, PRECIO_PAQUETE) VALUES 
+('PQ06', 'C01', 1200.00),
+('PQ06', 'C02', 1800.00),
+('PQ06', 'C03', 2600.00);
 
 SET FOREIGN_KEY_CHECKS = 1;
