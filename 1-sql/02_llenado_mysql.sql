@@ -170,4 +170,28 @@ INSERT INTO PRECIO_PAQUETE_CLASE (IDPAQUETE, IDCLASE, PRECIO_PAQUETE) VALUES
 ('PQ06', 'C02', 1800.00),
 ('PQ06', 'C03', 2600.00);
 
+-- =====================================
+-- ENFERMEDADES (Adicionales)
+-- =====================================
+
+INSERT INTO ENFERMEDAD
+(IDENFERMEDAD, NOMBREENFERMEDAD)
+VALUES
+('E06','Rabia'), ('E07','Fiebre Tifoidea'), ('E08','Meningitis Meningocócica'), 
+('E09','Poliomielitis'), ('E10','Encefalitis Japonesa'), ('E11','Cólera'),
+('E12','Varicela'), ('E13','Influenza Estacional'), ('E14','Virus del Papiloma Humano'),
+('E15','Difteria');
+
+-- =====================================
+-- VACUNAS (Adicionales)
+-- =====================================
+
+INSERT INTO VACUNA
+(IDVACUNA, IDENFERMEDAD, NOMBREVACUNA)
+VALUES
+('V10','E06','Verorab'), ('V11','E07','Typhim Vi'), ('V12','E08','Menactra'),
+('V13','E09','IPOL'), ('V14','E10','Ixiaro'), ('V15','E11','Dukoral'),
+('V16','E12','Varivax'), ('V17','E13','Fluarix'),('V18','E14','Gardasil 9'),
+('V19','E15','Daptacel');
+
 SET FOREIGN_KEY_CHECKS = 1;
