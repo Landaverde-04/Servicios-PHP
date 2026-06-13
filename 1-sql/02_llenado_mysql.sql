@@ -189,9 +189,9 @@ VALUES
 INSERT INTO VACUNA
 (IDVACUNA, IDENFERMEDAD, NOMBREVACUNA)
 VALUES
-('V10','E06','Verorab'), ('V11','E07','Typhim Vi'), ('V12','E08','Menactra'),
-('V13','E09','IPOL'), ('V14','E10','Ixiaro'), ('V15','E11','Dukoral'),
-('V16','E12','Varivax'), ('V17','E13','Fluarix'),('V18','E14','Gardasil 9'),
-('V19','E15','Daptacel');
+('V06','E06','Vacuna Verorab'), ('V07','E07','Vacuna Typhim Vi'), ('V08','E08','Vacuna Menactra'),
+('V09','E09','Vacuna IPOL'), ('V10','E10','Vacuna Ixiaro'), ('V11','E11','Vacuna Dukoral'),
+('V12','E12','Vacuna Varivax'), ('V13','E13','Vacuna Fluarix'),('V14','E14','Vacuna Gardasil 9'),
+('V15','E15','Vacuna Daptacel');
 
 SET FOREIGN_KEY_CHECKS = 1;
